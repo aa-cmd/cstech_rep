@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/chess.h
+config.h
+../include/config.h
+
+../include/config.h
+map
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+
+/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp
+config.h
+/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/config.h
+chess.h
+/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.h
+

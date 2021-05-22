@@ -1,0 +1,3 @@
+/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build/CMakeFiles/rebuild_cache.dir
+/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build/CMakeFiles/edit_cache.dir
+/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build/CMakeFiles/Chess_Demo.dir
