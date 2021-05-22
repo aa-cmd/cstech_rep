@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/Chess_Demo.dir/src/main.cpp.o CMakeFiles/Chess_Demo.dir/src/chess.cpp.o  -o Chess_Demo 
+/bin/x86_64-linux-gnu-g++-9  -g -DDEBUG  -rdynamic CMakeFiles/Chess_Demo.dir/src/main.cpp.o CMakeFiles/Chess_Demo.dir/src/chess.cpp.o  -o Chess_Demo 

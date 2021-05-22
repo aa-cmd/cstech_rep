@@ -19,6 +19,8 @@ fstream
 -
 sstream
 -
+cstdio
+-
 
 /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp
 config.h

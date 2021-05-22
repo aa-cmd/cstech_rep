@@ -10,7 +10,7 @@ public:
     Piece(){}
     Piece(int x, int y);
     ~Piece(){}
-    virtual void posMov(std::string *, float *, float *) = 0;
+    virtual void posMov(std::string *, float *, float *, int , int ) = 0;
     virtual void setxPos(int) = 0;
     virtual void setyPos(int) = 0;
 };
@@ -23,7 +23,7 @@ public:
     KnightPiece();
     ~KnightPiece();
 
-    void posMov(std::string *, float *, float *);
+    void posMov(std::string *, float *, float *, int, int);
     void setxPos(int);
     void setyPos(int);
     
@@ -35,9 +35,11 @@ public:
     BishopPiece();
     ~BishopPiece();
 
-    void posMov(std::string *, float *, float *);
+    void posMov(std::string *, float *, float *, int, int);
     void setxPos(int);
     void setyPos(int);
 };
+
+extern std::string coord[8][8];
 
 #endif //CHESS_H

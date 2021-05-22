@@ -6,5 +6,6 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <cstdio>
 
 #endif //CONFIG_H

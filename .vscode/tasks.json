@@ -11,6 +11,7 @@
                 "cwd": "${workspaceFolder}/build"
             },
             "args": [
+                "-g",
                 "${workspaceFolder}"
             ],
             "group": {

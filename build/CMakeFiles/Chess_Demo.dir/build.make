@@ -60,28 +60,28 @@ include CMakeFiles/Chess_Demo.dir/flags.make
 CMakeFiles/Chess_Demo.dir/src/main.cpp.o: CMakeFiles/Chess_Demo.dir/flags.make
 CMakeFiles/Chess_Demo.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Chess_Demo.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Chess_Demo.dir/src/main.cpp.o -c /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Chess_Demo.dir/src/main.cpp.o -c /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp
 
 CMakeFiles/Chess_Demo.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chess_Demo.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp > CMakeFiles/Chess_Demo.dir/src/main.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp > CMakeFiles/Chess_Demo.dir/src/main.cpp.i
 
 CMakeFiles/Chess_Demo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chess_Demo.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp -o CMakeFiles/Chess_Demo.dir/src/main.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp -o CMakeFiles/Chess_Demo.dir/src/main.cpp.s
 
 CMakeFiles/Chess_Demo.dir/src/chess.cpp.o: CMakeFiles/Chess_Demo.dir/flags.make
 CMakeFiles/Chess_Demo.dir/src/chess.cpp.o: ../src/chess.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Chess_Demo.dir/src/chess.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Chess_Demo.dir/src/chess.cpp.o -c /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Chess_Demo.dir/src/chess.cpp.o -c /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp
 
 CMakeFiles/Chess_Demo.dir/src/chess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Chess_Demo.dir/src/chess.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp > CMakeFiles/Chess_Demo.dir/src/chess.cpp.i
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp > CMakeFiles/Chess_Demo.dir/src/chess.cpp.i
 
 CMakeFiles/Chess_Demo.dir/src/chess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Chess_Demo.dir/src/chess.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp -o CMakeFiles/Chess_Demo.dir/src/chess.cpp.s
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp -o CMakeFiles/Chess_Demo.dir/src/chess.cpp.s
 
 # Object files for target Chess_Demo
 Chess_Demo_OBJECTS = \

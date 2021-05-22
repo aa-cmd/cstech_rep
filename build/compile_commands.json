@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/include  -g -DDEBUG   -o CMakeFiles/Chess_Demo.dir/src/main.cpp.o -c /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp",
+  "file": "/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/main.cpp"
+},
+{
+  "directory": "/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -I/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/include  -g -DDEBUG   -o CMakeFiles/Chess_Demo.dir/src/chess.cpp.o -c /home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp",
+  "file": "/home/aykanankara/Desktop/other/cpp_workshop/chess_demo/src/chess.cpp"
+}
+]
