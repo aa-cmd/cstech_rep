@@ -27,84 +27,94 @@ int main(int argc, char *argv[])
     KnightPiece Knight;
     BishopPiece Bishop;
 
-    string fn = "board3.txt";//argv[1];
-
-    cout << fn << endl;
-    ifstream f(fn);
-
-    if (f.is_open() && f.good())
+    if (argv[1] != nullptr)
     {
-        cout << "File is open!\nContains:\n";
-        string row = "";
-        while (getline(f, row))
-        {
-            cout << row << endl;
-            ss << row;
-            while (ss >> str)
-            {
-                coord[row_cnt][col_cnt] = str;
-                // cout << "coord[" << row_cnt << "]" << "[" << col_cnt << "]" << "=" << str << endl;
-                
+        string fn = argv[1];
 
-                if (str[0] != 'x')
+        cout << fn << endl;
+        ifstream f(fn);
+
+        if (f.is_open() && f.good())
+        {
+            cout << "File is open!\nContains:\n";
+            string row = "";
+            while (getline(f, row))
+            {
+                cout << row << endl;
+                ss << row;
+                while (ss >> str)
                 {
-                    switch (str[0])
+                    coord[row_cnt][col_cnt] = str;
+                    // cout << "coord[" << row_cnt << "]" << "[" << col_cnt << "]" << "=" << str << endl;
+
+                    if (str[0] != 'x')
                     {
-                    case 'p':
-                        summationPieces(str[1], &sumb, &sums, 1);
-                        break;
+                        switch (str[0])
+                        {
+                        case 'p':
+                            summationPieces(str[1], &sumb, &sums, 1);
+                            break;
+                        case 'a':
+                            summationPieces(str[1], &sumb, &sums, 3);
+                            // Knight.posMov(&coord[row_cnt][col_cnt], &sumb, &sums, row_cnt, col_cnt);
+                            break;
+                        case 'f':
+                            summationPieces(str[1], &sumb, &sums, 3);
+                            // Bishop.posMov(&coord[row_cnt][col_cnt], &sumb, &sums, row_cnt, col_cnt);
+                            break;
+                        case 'k':
+                            summationPieces(str[1], &sumb, &sums, 5);
+                            break;
+                        case 'v':
+                            summationPieces(str[1], &sumb, &sums, 9);
+                            break;
+                        case 's':
+                            summationPieces(str[1], &sumb, &sums, 100);
+                            break;
+                        }
+                    }
+
+                    col_cnt++;
+                }
+                ss.clear();
+                row_cnt--;
+                col_cnt = 0;
+            }
+        }
+        else
+        {
+            cout << "Failed to open file..." << endl;
+            ;
+        }
+
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                calc_str = coord[i][j];
+
+                if (calc_str[0] != 'x')
+                {
+                    switch (calc_str[0])
+                    {
                     case 'a':
-                        summationPieces(str[1], &sumb, &sums, 3);
-                        // Knight.posMov(&coord[row_cnt][col_cnt], &sumb, &sums, row_cnt, col_cnt);
+                        Knight.posMov(&coord[i][j], &sumb, &sums, i, j);
                         break;
                     case 'f':
-                        summationPieces(str[1], &sumb, &sums, 3);
-                        // Bishop.posMov(&coord[row_cnt][col_cnt], &sumb, &sums, row_cnt, col_cnt);
-                        break;
-                    case 'k':
-                        summationPieces(str[1], &sumb, &sums, 5);
-                        break;
-                    case 'v':
-                        summationPieces(str[1], &sumb, &sums, 9);
-                        break;
-                    case 's':
-                        summationPieces(str[1], &sumb, &sums, 100);
+                        Bishop.posMov(&coord[i][j], &sumb, &sums, i, j);
                         break;
                     }
                 }
-
-                col_cnt++;
             }
-            ss.clear();
-            row_cnt--;
-            col_cnt = 0;
         }
+        printf("Black's total point: %3.1f\n", sums);
+        printf("White's total point: %3.1f\n", sumb);
     }
     else
     {
-        cout << "Failed to open file..."<<endl;;
+        cout << "File does not exist!!!" << endl;
+        return 1;
     }
 
-    for (int i = 0; i < 8; i++)
-    {
-        for (int j = 0; j < 8; j++)
-        {
-            calc_str = coord[i][j];
-
-            if (calc_str[0] != 'x')
-            {
-                switch (calc_str[0])
-                {
-                case 'a':
-                    Knight.posMov(&coord[i][j], &sumb, &sums, i, j);
-                    break;
-                case 'f':
-                    Bishop.posMov(&coord[i][j], &sumb, &sums, i, j);
-                    break;
-                }
-            }
-        }
-    }
-    printf("Black's total point: %3.1f\n", sums);
-    printf("White's total point: %3.1f\n", sumb);
+    return 0;
 }
