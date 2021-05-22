@@ -13,7 +13,8 @@ set( PROJECT_SOURCES
         ${PROJECT_SOURCE_DIR}/chess.cpp)
 
 set( PROJECT_HEADERS
-        ${PROJECT_SOURCE_DIR}/chess.h)
+        ${PROJECT_INCLUDE_DIR}/config.h
+        ${PROJECT_INCLUDE_DIR}/chess.h)
 
 include_directories(${PROJECT_INCLUDE_DIR})
 

@@ -1,4 +1,6 @@
+#include "config.h"
 #include "chess.h"
+
 
 using namespace std;
 
@@ -13,20 +15,20 @@ map<char, int> chesspieces{
 
 
 
-void subtractFromSum(char c, int *sumb, int *sums, int val)
+void subtractFromSum(char c, float *sumb, float *sums, int val)
 {
     switch (c)
     {
     case 'b':
-        *sumb -= val / 2;
+        *sumb -= float(val) / 2;
         break;
     case 's':
-        *sums -= val / 2;
+        *sums -= float(val) / 2;
         break;
     }
 }
 
-bool matchSituation(int x, int y, int *sumb, int *sums, string str)
+bool matchSituation(int x, int y, float *sumb, float *sums, string str)
 {
 
     bool isClash = false;
@@ -91,7 +93,7 @@ Piece::Piece(int x, int y)
 // Piece::~Piece(){}
 
 
-void KnightPiece::posMov(string *str, int *sumb, int *sums)
+void KnightPiece::posMov(string *str, float *sumb, float *sums)
 {
 
     matchSituation(xPos + 2, yPos + 1, sumb, sums, *str);
@@ -128,7 +130,7 @@ BishopPiece::BishopPiece()
 }
 BishopPiece::~BishopPiece(){}
 
-void BishopPiece::posMov(string *str, int *sumb, int *sums)
+void BishopPiece::posMov(string *str, float *sumb, float *sums)
 {
     for (int i = 1; i < 8; i++)
     {

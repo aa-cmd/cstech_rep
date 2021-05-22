@@ -5,12 +5,12 @@
 using namespace std;
 
 stringstream ss;
-int sumb, sums;
+float sumb, sums;
 int row_cnt = 0, col_cnt = 0;
 string coord[8][8];
 string str, calc_str;
 
-static void summationPieces(char c, int *sumb, int *sums, int val)
+static void summationPieces(char c, float *sumb, float *sums, int val)
 {
     switch (c)
     {
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     KnightPiece Knight;
     BishopPiece Bishop;
 
-    string fn = argv[1];
+    string fn = "board2.txt";//argv[1];
 
     cout << fn << endl;
     ifstream f(fn);
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        cout << "Failed to open file...";
+        cout << "Failed to open file..."<<endl;;
     }
 
     for (int i = 0; i < row_cnt; i++)
@@ -105,6 +105,6 @@ int main(int argc, char *argv[])
             }
         }
     }
-    cout << "White's total point: " << sumb << endl;
-    cout << "Black's total point: " << sums << endl;
+    printf("White's total point: %3.1f\n", sumb);
+    printf("Black's total point: %3.1f\n", sums);
 }
